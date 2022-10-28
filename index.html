@@ -16,18 +16,19 @@
 
 <body>
 
-    <section class="container">
+    <section class="container data">
+        <h1 class="text-center m-5">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
         <div class="row">
             <div class="col-4">
                 <div class="d-flex flex-column align-items-center">
                     <h3>Nome cognome</h3>
-                    <input id="fullname" type="text" value="Ajeje Brazorf">
+                    <input id="fullname" type="text">
                 </div>
             </div>
             <div class="col-4">
                 <div class="d-flex flex-column align-items-center">
                     <h3>Distanza</h3>
-                    <input id="distance" type="text" value="100">
+                    <input id="distance" type="text">
                 </div>
             </div>
             <div class="col-4">
@@ -47,30 +48,48 @@
         </div>
     </section>
 
-    <section id="details" class="container mt-3 bg-primary d-none">
-        <h2>DETTAGLIO BIGLEITTO</h2>
-        <div class="row">
+    <section id="details" class="container mt-5 d-none">
+        <h2 class="text-center mt-5">DETTAGLIO BIGLEITTO</h2>
+        <div id="minorenni_img" class="details_img m-auto d-none">
+            <img src="imgs/frodo.gif" class="img-fluid" alt="">
+        </div>
+        <div id="maggiorenni_img" class="details_img m-auto" >
+            <img src="imgs/aragorn.webp" class="img-fluid" alt="">
+        </div>
+        <div id="over_img" class="details_img m-auto">
+            <img src="imgs/gandalf.gif" class="img-fluid" alt="">
+        </div>
+        <hr>
+        <div class="row mb-3">
             <div class="col-4">
-                <div>
+                <div class="text-center bkg_name">
                     <h3>Nome Passeggero</h3>
-                    <div id="name"></div>
+                    <div id="name" class="fs-3"></div>
                 </div>
             </div>
             <div class="col-2">
-                <h3>Offerta</h3>
-                <div id="type"></div>
+                <div class="text-center">
+                    <h3>Offerta</h3>
+                    <div id="type" class="fs-4"></div>
+                </div>
             </div>
             <div class="col-2">
-                <h3>Carrozza</h3>
-                <div id="cab"></div>
+                <div class="text-center">
+                    <h3>Carrozza</h3>
+                    <div id="cab" class="fs-4"></div>
+                </div>
             </div>
             <div class="col-2">
-                <h3>Codice CP</h3>
-                <div id="code"></div>
+                <div class="text-center">
+                    <h3>Codice CP</h3>
+                    <div id="code" class="fs-4"></div>
+                </div>
             </div>
             <div class="col-2">
-                <h3>Costo Biglietto</h3>
-                <div id="price"></div>
+                <div class="text-center">
+                    <h3>Costo Biglietto</h3>
+                    <div id="price" class="fs-4"></div>
+                </div>
             </div>
         </div>
     </section>
