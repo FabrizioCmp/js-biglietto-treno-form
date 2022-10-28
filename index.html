@@ -7,39 +7,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-   
+
     <link rel="stylesheet" href="css/style.css">
     <title>train ticket form</title>
 </head>
-   
+
 <body>
 
-    <section class="" >
-        <div>
-            <h1>Nome cognome</h1>
-            <input id="fullname" type="text">
+    <section class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="d-flex flex-column align-items-center">
+                    <h3>Nome cognome</h3>
+                    <input id="fullname" type="text" value="Ajeje Brazorf">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="d-flex flex-column align-items-center">
+                    <h3>Distanza</h3>
+                    <input id="distance" type="text" value="100">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="d-flex flex-column align-items-center">
+                    <h3>fascia età</h3>
+                    <select name="" id="age">
+                        <option value="0.8">minorenne</option>
+                        <option value="1">maggiorenne</option>
+                        <option value="0.6">over</option>
+                    </select>
+                </div>
+            </div>
         </div>
-        <div>
-            <h1>Distanza</h1>
-            <input id="distance" type="text">
+        <div class="d-flex justify-content-center btn_gap m-4 ">
+            <button id="btn_generate">Genera</button>
+            <button id="btn_delete">Annulla</button>
         </div>
-        <div>
-            <h1>fascia età</h1>
-            <select name="" id="age">
-                <option value="0.8">minorenne</option>
-                <option value="1">maggiorenne</option>
-                <option value="0.6">over</option>
-            </select>
-        </div>
-
-        <button>Genera</button>
-        <button>Annulla</button>
     </section>
 
-    <section class="mt-3 bg-primary">
-        <h1>dettagli biglietto</h1>
+    <section class="container mt-3 bg-primary">
+        <h2>DETTAGLIO BIGLEITTO</h2>
+        <div class="row">
+            <div class="col-4">
+                <div>
+                    <h3>Nome Passeggero</h3>
+                    <div id="name"></div>
+                </div>
+            </div>
+            <div class="col-2">
+                <h3>Offerta</h3>
+                <div id="type"></div>
+            </div>
+            <div class="col-2">
+                <h3>Carrozza</h3>
+                <div id="cab"></div>
+            </div>
+            <div class="col-2">
+                <h3>Codice CP</h3>
+                <div id="code"></div>
+            </div>
+            <div class="col-2">
+                <h3>Costo Biglietto</h3>
+                <div id="price"></div>
+            </div>
+        </div>
     </section>
 
     <script src="js/main.js"></script>
